@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>nh_net7</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Include="..\nh-net6\Mapping.cs" Link="Mapping.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NHibernate" Version="5.4.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\nh-migration\nh-migration.csproj" />
+	</ItemGroup>
+
+</Project>
